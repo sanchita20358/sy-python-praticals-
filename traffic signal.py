@@ -1,6 +1,6 @@
 print("==TRAFFIC SIGNAL STIMULATION===")
 
-signal=input("Enter traffic signal colour:")
+signal=input("Enter traffic signal colour:").lower()
 if signal=="red":
     print("Action:STOP")
 elif signal=="yellow":
