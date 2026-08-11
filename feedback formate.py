@@ -1,0 +1,12 @@
+customer_name=input("Enter customer name:")
+product_name=input("Enter product name:")
+feedback=input("Enter your feedback:")
+
+customer_name=customer_name.strip().title()
+product_name=product_name.strip().title()
+feedback=feedback.capitalize()
+
+print("==========feedback============")
+print("Customer Name:",customer_name)
+print("Product Name:",product_name)
+print("Feedback:",feedback)
