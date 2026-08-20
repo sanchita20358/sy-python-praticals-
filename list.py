@@ -56,3 +56,4 @@ print(list)
 
 newlist=list2.copy()
 print(newlist)
+
