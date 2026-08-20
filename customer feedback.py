@@ -3,7 +3,9 @@ print("feedback format report".upper().center(85))
 
 print("\n original feedback:".title())
 print(feedback)
-print("\n")
+print("\n================================================")
+
+
 print("Feedback Summary".title())
 print("total word count:".title(),len(feedback.split()))
 print("total character count:".title(),len(feedback))
