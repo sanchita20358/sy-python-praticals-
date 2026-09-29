@@ -1,8 +1,3 @@
-# Daily Class Schedule
-
-# Create a 5 x 5 class schedule
-# Rows = Time slots
-# Columns = Days of the week
 
 schedule = [
     ["Math", "Python", "AI", "English", "DS"],
