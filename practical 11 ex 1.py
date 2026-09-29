@@ -1,38 +1,34 @@
-bus = [
-    [0, 0, 1, 0],
-    [1, 0, 0, 0],
-    [0, 1, 0, 1],
-    [0, 0, 0, 0]
+
+
+seats = [
+    ['O', 'O', 'O'],
+    ['O', 'O', 'O'],
+    ['O', 'O', 'O']
 ]
 
-print("===== BUS SEAT LAYOUT =====")
 
-for row in bus:
-    for seat in row:
-        if seat == 0:
-            print("Available", end=" | ")
-        else:
-            print("Reserved ", end=" | ")
-    print()
+print("===== MOVIE THEATRE SEATING =====")
 
-row = int(input("\nEnter row number (1-4): "))
-seat = int(input("Enter seat number (1-4): "))
+for row in seats:
+    print(" ".join(row))
+
+
+row = int(input("\nEnter row number (1-3): "))
+column = int(input("Enter column number (1-3): "))
+
 
 row_index = row - 1
-seat_index = seat - 1
+column_index = column - 1
 
-if bus[row_index][seat_index] == 0:
-    bus[row_index][seat_index] = 1
+
+if seats[row_index][column_index] == 'O':
+    seats[row_index][column_index] = 'X'
     print("Seat reserved successfully!")
 else:
     print("Sorry! Seat is already reserved.")
 
-print("\n===== UPDATED BUS SEAT LAYOUT =====")
 
-for i in range(len(bus)):
-    for j in range(len(bus[i])):
-        if bus[i][j] == 0:
-            print("Available", end=" | ")
-        else:
-            print("Reserved ", end=" | ")
-    print()
+print("\n===== UPDATED SEATING =====")
+
+for row in seats:
+    print(" ".join(row))
